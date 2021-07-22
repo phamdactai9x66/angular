@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../src/app/admin/partLayout/header-admin/header-admin.component.scss"
+    ],
+    "names": [],
+    "file": "header-admin.component.css"
+}

@@ -1,0 +1,29 @@
+<table class="table" style="width: 600px; text-align: center; margin: 0 auto;">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">titlte</th>
+      <th scope="col">desc</th>
+      <th scope="col">author</th>
+      <th>handle</th>
+    </tr>
+  </thead>
+  <tbody>
+    <div *ngIf="_ApiService.dataProduct.length >= 1; then thenBlock"></div>
+
+
+  </tbody>
+  <button routerLink="/product/add">add product</button>
+</table>
+
+
+<ng-template #thenBlock>
+  <tr *ngFor="let item of _ApiService.dataProduct;index as i">
+  <th scope="row">{{i}}</th>
+  <td>{{item.titlte}}</td>
+  <td>{{item.price}}</td>
+  <td>{{item.desc}}</td>
+  <td><button (click)="deleteProduct(item.id)">delele</button>
+    <button  routerLink="/product/{{item.id}}">edit</button>
+  </td>
+</tr></ng-template>

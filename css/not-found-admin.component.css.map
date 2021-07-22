@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../src/app/admin/not-found-admin/not-found-admin.component.scss"
+    ],
+    "names": [],
+    "file": "not-found-admin.component.css"
+}

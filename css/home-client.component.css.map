@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../src/app/client/home-client/home-client.component.scss"
+    ],
+    "names": [],
+    "file": "home-client.component.css"
+}

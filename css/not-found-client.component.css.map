@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../src/app/client/not-found-client/not-found-client.component.scss"
+    ],
+    "names": [],
+    "file": "not-found-client.component.css"
+}

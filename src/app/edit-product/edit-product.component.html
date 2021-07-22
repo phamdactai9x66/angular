@@ -1,0 +1,45 @@
+
+
+
+
+
+
+
+
+<form style="width: 700px; margin: 0 auto;"
+[formGroup]="stateForm"
+(ngSubmit)="submitForm()"
+>
+<div *ngIf="displayAlert == true; then thenBlock "></div>
+
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">title</label>
+    <input type="email" class="form-control" id="exampleInputEmail1"  formControlName="titlte">
+
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">price</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" formControlName="price">
+
+  </div>
+
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">dec</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" formControlName="desc">
+
+  </div>
+
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">author</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" formControlName="author">
+
+  </div>
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+  <button routerLink="">go back</button>
+
+</form>
+
+<ng-template #thenBlock><div class="alert alert-success"  role="alert">
+    update product successfully
+</div></ng-template>
